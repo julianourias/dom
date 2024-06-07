@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinco Lugares para Viajar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .lugar {
+            margin-bottom: 40px;
+        }
+        .lugar img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cinco lugares que eu, Juliano, gostaria de viajar</h1>
+    
+    <div class="lugar">
+        <h2>1. Paris, França</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Paris">
+        <p class="paragrafo">Paris é conhecida como a cidade do amor e é famosa por seus monumentos icônicos como a Torre Eiffel e o Museu do Louvre.</p>
+    </div>
+    
+    <div class="lugar">
+        <h2>2. Tóquio, Japão</h2>
+        <img src="https://www.civitatis.com/blog/wp-content/uploads/2022/11/calle-akihabara-tokio-1280x854.jpg" alt="Tóquio">
+        <p class="paragrafo">Tóquio é uma cidade vibrante que mistura tradição e modernidade, com seus templos antigos e arranha-céus futuristas.</p>
+    </div>
+    
+    <div class="lugar">
+        <h2>3. Nova York, EUA</h2>
+        <img src="https://descubraeua.com.br/wp-content/uploads/2020/06/manhattan-nova-york.jpg" alt="Nova York">
+        <p class="paragrafo">Nova York é conhecida como a cidade que nunca dorme, famosa por seus teatros na Broadway e a Estátua da Liberdade.</p>
+    </div>
+    
+    <div class="lugar">
+        <h2>4. Roma, Itália</h2>
+        <img src="https://catracalivre.com.br/wp-content/uploads/2019/12/istock-1058422764-910x607.jpg" alt="Roma">
+        <p class="paragrafo">Roma é uma cidade histórica com incríveis ruínas antigas como o Coliseu e o Fórum Romano, além da Cidade do Vaticano.</p>
+    </div>
+    
+    <div class="lugar">
+        <h2>5. Sydney, Austrália</h2>
+        <img src="https://www.viajenaviagem.com/wp-content/uploads/2016/02/sydney-intro-opera-1920x640-1.jpg" alt="Sydney">
+        <p class="paragrafo">Sydney é famosa por sua icônica Ópera de Sydney, belas praias e um estilo de vida descontraído.</p>
+    </div>
+
+    <script>
+        // Listar todas as imagens no console
+        const imagens = document.querySelectorAll('img');
+        imagens.forEach(img => console.log(img.src));
+
+        // Incorporar texto em um parágrafo específico usando JavaScript
+        const paragrafoEspecial = document.querySelector('.lugar:nth-of-type(3) .paragrafo');
+        paragrafoEspecial.innerText += ' Não deixe de visitar o Central Park e o Empire State Building para uma experiência completa!';
+    </script>
+
+</body>
+</html>
